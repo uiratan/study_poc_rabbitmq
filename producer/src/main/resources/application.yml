@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  rabbitmq:
+    host: rabbitmq  # Nome do serviço no Docker Compose
+    port: 5672
+    username: guest
+    password: guest
+
+producer:
+  queue:
+    name: myQueue
+  exchange:
+    name: myExchange
